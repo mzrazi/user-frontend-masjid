@@ -1,0 +1,39 @@
+
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient( rgba(247, 229, 181, 0.7), rgba(252, 232, 179, 0.7)), 
+    url('../../assets/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    color: #100f0f;
+
+
+
+
+
+  }
+
+  .hero {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgb(245, 245, 245,0.9),rgb(245, 245, 245,0.9)), 
+                url('../../assets/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color:  #d5a12e;
+    display: flex;
+    align-items: center;
+    justify-content: center
+
+  }
+  
+  .hero-text {
+    text-align: center;
+    max-width: 800px;
+    
+  }
+
+
+  
+  
