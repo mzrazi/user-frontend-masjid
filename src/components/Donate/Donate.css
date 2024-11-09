@@ -1,0 +1,69 @@
+/* Container styling */
+.donate-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+  }
+  
+  /* Title styling */
+  .donate-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #044b31; /* Matches the theme color */
+    margin-bottom: 10px;
+  }
+  
+  /* Description styling */
+  .donate-description {
+    font-size: 1rem;
+    color: #555555;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Input styling */
+  .donate-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  
+  .donate-input:focus {
+    outline: none;
+    border-color:  #044b31;
+    box-shadow: 0px 0px 5px rgba(51, 153, 204, 0.4);
+  }
+  
+  /* Donate button styling */
+  .donate-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #044b31; /* Matches the theme color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .donate-button:hover {
+    background-color: #287aa9; /* Darker shade on hover */
+  }
+  
+  .donate-button:active {
+    background-color: #1f5c82; /* Even darker shade on click */
+  }
+  
