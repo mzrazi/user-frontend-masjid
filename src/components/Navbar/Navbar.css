@@ -1,8 +1,9 @@
-nav{
+/* Main navbar container */
+nav {
     width: 100%;
     height: 65px;
-    background:#044b31;
-    color:  #d5a12e;
+    background: #044b31; /* Dark green background */
+    color: #d5a12e; /* Gold text color */
     padding: 4px 0;
     position: fixed;
     top: 0;
@@ -10,18 +11,125 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 10;   
+    z-index: 10;
 }
 
-.logo{
-
+/* Logo styling */
+.logo {
     height: 50px;
     width: 50px;
     margin-left: 10px;
 }
-nav ul li{
-    display: inline-block;
+
+/* Navbar links */
+nav ul {
+    display: flex;
+    margin-right: 20px; 
     list-style: none;
-    margin: 5px 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
     font-size: 16px;
+    position: relative; /* For dropdown menu positioning */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+/* Profile icon inside the list */
+nav ul li.profile {
+    cursor: pointer;
+}
+
+nav ul li.profile:hover{
+    color: #fff;
+}
+
+
+/* Dropdown menu */
+.dropdown {
+    position: absolute;
+    top: 45px; /* Space below the profile icon */
+    left: -50%; /* Align dropdown directly under profile icon */
+    background-color: #044b31;
+    border: 1px solid #444;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    min-width: 150px;
+    max-height: 200px; /* Limit height */
+    overflow-y: auto; /* Scroll if items exceed max height */
+}
+
+/* Force dropdown list items to stack vertically */
+.dropdown ul {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.dropdown li {
+    display: block; /* Each item takes a full line */
+    padding: 8px 20px;
+    font-size: 14px;
+}
+
+.dropdown li a {
+    color: #d5a12e;
+    text-decoration: none;
+}
+
+.dropdown li:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.dropdown li:last-child {
+    cursor: pointer;
+}
+
+.dropdown li:last-child:hover {
+    background-color: #c53939;
+    color: #fff;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide nav items on mobile */
+    }
+
+    nav .profile {
+        margin-right: 20px; /* Add margin to profile icon */
+    }
+
+    /* Adjust dropdown for smaller screens */
+    .dropdown {
+        top: 50px; /* Adjust for smaller screens */
+        left: 0; /* Align to the left */
+        min-width: 150px;
+        max-width: 90vw; /* Constrain width on mobile */
+    }
+    /* Arrow styling */
+.profile .arrow {
+    margin-left: 6px;
+    margin-top: 2px;
+    width: 0; 
+    height: 0; 
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #d5a12e; /* Gold color to match text */
+}
 }

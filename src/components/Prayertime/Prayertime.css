@@ -1,0 +1,37 @@
+.prayer-time-container {
+    max-width: 600px; /* Adjust the width as needed */
+    
+    margin: 20px auto;
+    margin-top: 100px; /* Centers the container and adds top/bottom margin */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .prayer-time-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .prayer-time-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .prayer-name {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .prayer-time {
+    color: #555;
+  }
+  

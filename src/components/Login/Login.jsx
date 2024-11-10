@@ -5,23 +5,23 @@ import masjidImage from '../../assets/bg3.jpg';
 
 const Login = () => {
   const [Email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [Password, setPassword] = useState('');
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
   // Function to check if user is authenticated
   const isAuthenticated = () => !!localStorage.getItem('authToken');
 
-  useEffect(() => {
-    // Redirect to home page if already authenticated
-    if (isAuthenticated()) {
-      navigate('/home');
-    }
-  }, [navigate]);
+  // useEffect(() => {
+  //   // Redirect to home page if already authenticated
+  //   if (isAuthenticated()) {
+  //     navigate('/home');
+  //   }
+  // }, [navigate]);
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    setError(''); // Clear any existing error
+    setError(''); 
 
     try {
       const response = await fetch('http://localhost:3000/api/login', {
@@ -29,7 +29,7 @@ const Login = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ Email, password }),
+        body: JSON.stringify({ Email, Password }),
       });
 
       if (!response.ok) {
@@ -40,6 +40,7 @@ const Login = () => {
 
       // Save token to local storage
       localStorage.setItem('authToken', data.token);
+      localStorage.setItem('userId', data.user._id);
 
       // Redirect to the home page
       navigate('/home');
@@ -71,7 +72,7 @@ const Login = () => {
         <input
           type="password"
           placeholder="Enter your password"
-          value={password}
+          value={Password}
           onChange={(e) => setPassword(e.target.value)}
         />
 

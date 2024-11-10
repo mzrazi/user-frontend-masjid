@@ -6,7 +6,7 @@ const Gallery = () => {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/api/gallery') // Replace with actual API endpoint
+    fetch('http://localhost:3000/api/gallery') 
       .then(response => response.json())
       .then(data => {
         if (data.status === 200) {
