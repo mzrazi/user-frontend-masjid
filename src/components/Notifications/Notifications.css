@@ -1,0 +1,80 @@
+/* Notifications.css */
+.notifications-container {
+    max-width: 800px;
+    margin: 80px auto; /* Adjust top margin to avoid overlap with fixed navbar */
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .notifications-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .notification-item {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .notification-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .notification-title {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .notification-body {
+    font-size: 14px;
+    color: #555;
+    margin-top: 8px;
+  }
+  
+  .notification-date {
+    font-size: 12px;
+    color: #777;
+    margin-top: 10px;
+    display: block;
+  }
+  
+  /* Ensure responsiveness on smaller screens */
+  @media screen and (max-width: 768px) {
+    .notifications-container {
+      margin-top: 100px; /* Adjust for smaller screen if needed */
+      padding: 15px;
+    }
+  
+    .notification-title {
+      font-size: 16px;
+    }
+  
+    .notification-body {
+      font-size: 12px;
+    }
+  
+    .notification-date {
+      font-size: 10px;
+    }
+  }
+  

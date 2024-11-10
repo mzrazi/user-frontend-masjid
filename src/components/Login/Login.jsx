@@ -12,12 +12,12 @@ const Login = () => {
   // Function to check if user is authenticated
   const isAuthenticated = () => !!localStorage.getItem('authToken');
 
-  // useEffect(() => {
-  //   // Redirect to home page if already authenticated
-  //   if (isAuthenticated()) {
-  //     navigate('/home');
-  //   }
-  // }, [navigate]);
+  useEffect(() => {
+    // Redirect to home page if already authenticated
+    if (isAuthenticated()) {
+      navigate('/home');
+    }
+  }, [navigate]);
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -77,16 +77,13 @@ const Login = () => {
         />
 
         <div className="login-options">
-          <label>
-            <input type="checkbox" /> Remember Me
-          </label>
           <a href="#forgot">Forgot Password?</a>
         </div>
 
         <button className="login-button" onClick={handleLogin}>Login</button>
 
         <p className="signup-link">
-          New here? <a href="#signup">Create an account</a>
+          New here? <a href="/signup">Create an account</a>
         </p>
       </div>
     </div>
