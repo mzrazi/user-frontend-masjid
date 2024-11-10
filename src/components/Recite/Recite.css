@@ -1,0 +1,81 @@
+/* Page styling */
+.recite {
+    padding: 20px;
+    margin-top: 100px; /* Adjust for navbar height */
+    background-color: #f9f9f9; /* Light background */
+    color: #333; /* Dark text color */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  /* Title styling */
+  .reading-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #044b31; /* Dark green color */
+  }
+  
+  /* Book grid */
+  .book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  /* Book card styling */
+  .book-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Book cover image styling */
+  .book-cover {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  /* Book title */
+  .book-title {
+    font-size: 1.5rem;
+    color: #044b31;
+    margin: 10px 0;
+  }
+  
+  /* Book description */
+  .book-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  /* Read button */
+  .read-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #d5a12e; /* Gold color */
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .read-button:hover {
+    background-color: #c58927; /* Darker gold color */
+  }
+  

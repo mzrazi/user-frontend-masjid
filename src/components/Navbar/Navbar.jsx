@@ -32,6 +32,7 @@ const Navbar = () => {
         <li><Link to="/prayer-time">Prayer Time</Link></li>
         <li><Link to="/Donate">Donate</Link></li>
         <li><Link to="/Gallery">Gallery</Link></li>
+        <li><Link to="/Recite">Recite</Link></li>
 
         {/* Profile icon as a list item */}
         <li className="profile" onClick={toggleDropdown}>
